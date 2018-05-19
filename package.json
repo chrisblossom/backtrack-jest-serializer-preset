@@ -1,0 +1,55 @@
+{
+  "name": "@backtrack/jest-serializer-preset",
+  "version": "0.1.0",
+  "description": "jest snapshot serializer for backtrack presets",
+  "keywords": ["backtrack", "jest", "snapshot", "serializer", "preset"],
+  "license": "ISC",
+  "repository": "chrisblossom/backtrack-jest-serializer-preset",
+  "homepage": "https://github.com/chrisblossom/backtrack-jest-serializer-preset",
+  "author": "Chris Blossom",
+  "engines": {
+    "node": ">=6.9.0",
+    "npm": ">=3.10.10",
+    "yarn": ">=1.6.0"
+  },
+  "devEngines": {
+    "node": ">=8.9.0",
+    "npm": ">=5.5.1"
+  },
+  "files": [
+    "dist/"
+  ],
+  "main": "dist/jest-serializer-preset.js",
+  "scripts": {
+    "build": "backtrack build --production",
+    "check-all": "backtrack check-all",
+    "clean": "backtrack clean",
+    "dev": "backtrack dev --development",
+    "format": "backtrack format",
+    "lint": "backtrack lint",
+    "lint.fix": "backtrack lint.fix",
+    "precommit": "backtrack precommit",
+    "prepublishOnly": "backtrack prepublishOnly",
+    "prepush": "backtrack prepush",
+    "test": "backtrack test",
+    "test.ci": "backtrack test.ci",
+    "test.ci-pretest": "backtrack test.ci-pretest",
+    "test.update": "jest --updateSnapshot",
+    "test.watch": "jest --watch"
+  },
+  "lint-staged": {
+    "*.{js,md,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "./.babelrc.js"
+    ]
+  },
+  "devDependencies": {
+    "@backtrack/core": "^0.1.17",
+    "@backtrack/preset-node-module": "^0.1.11"
+  }
+}
