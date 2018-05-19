@@ -7,7 +7,7 @@
 
 ## About
 
-Jest Snapshot Serializer for [backtrack](https://github.com/chrisblossom/backtrack) presets.
+Jest Snapshot Serializer for [backtrack](https://github.com/chrisblossom/backtrack) presets. Included with [`@backtrack/preset-preset`](https://github.com/chrisblossom/backtrack-preset-preset).
 
 ## Features
 
