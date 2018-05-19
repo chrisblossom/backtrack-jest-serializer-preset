@@ -5,7 +5,7 @@ module.exports = {
 
     config: {
         jest: {
-            snapshotSerializers: ['./'],
+            snapshotSerializers: ['./src/jest-serializer-preset.js'],
         },
     },
 };

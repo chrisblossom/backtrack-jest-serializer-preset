@@ -2,7 +2,13 @@
   "name": "@backtrack/jest-serializer-preset",
   "version": "0.1.0",
   "description": "jest snapshot serializer for backtrack presets",
-  "keywords": ["backtrack", "jest", "snapshot", "serializer", "preset"],
+  "keywords": [
+    "backtrack",
+    "jest",
+    "snapshot",
+    "serializer",
+    "preset"
+  ],
   "license": "ISC",
   "repository": "chrisblossom/backtrack-jest-serializer-preset",
   "homepage": "https://github.com/chrisblossom/backtrack-jest-serializer-preset",
