@@ -1,11 +1,15 @@
+const isPlainObject = require('lodash.isplainobject');
+
 function test(value) {
     const isDest =
-        typeof value === 'object' &&
-        value.files &&
-        value.absolute &&
-        value.hash &&
-        value.allowChanges &&
-        value.ignoreUpdates;
+        !!(
+            isPlainObject(value) &&
+            Array.isArray(value.files) &&
+            isPlainObject(value.absolute) &&
+            isPlainObject(value.hash) &&
+            isPlainObject(value.allowChanges) &&
+            isPlainObject(value.ignoreUpdates)
+        ) === true;
 
     return isDest;
 }
