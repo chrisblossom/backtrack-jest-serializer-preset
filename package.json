@@ -1,6 +1,6 @@
 {
 	"name": "@backtrack/jest-serializer-preset",
-	"version": "0.1.4",
+	"version": "0.2.0",
 	"description": "jest snapshot serializer for backtrack presets",
 	"keywords": [
 		"backtrack",
