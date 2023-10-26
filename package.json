@@ -10,41 +10,36 @@
 		"preset"
 	],
 	"license": "MIT",
+	"private": false,
 	"repository": "chrisblossom/backtrack-jest-serializer-preset",
 	"homepage": "https://github.com/chrisblossom/backtrack-jest-serializer-preset",
 	"author": "Chris Blossom",
 	"engines": {
-		"node": ">=6.9.0",
-		"npm": ">=3.10.10"
+		"node": ">=18.12.0"
 	},
 	"files": [
-		"dist/"
+		"lib/"
 	],
-	"main": "dist/jest-serializer-preset.js",
+	"main": "lib/jest-serializer-preset.js",
+	"module": "commonjs",
 	"scripts": {
-		"build": "backtrack build --production",
-		"clean": "backtrack clean",
-		"dev": "backtrack dev --development",
+		"check.all": "backtrack check.all",
 		"format": "backtrack format",
+		"git-pre-commit": "backtrack git-pre-commit",
+		"git-pre-push": "backtrack git-pre-push",
 		"lint": "backtrack lint",
 		"lint.fix": "backtrack lint.fix",
-		"precommit": "backtrack precommit",
 		"prepublishOnly": "backtrack prepublishOnly",
-		"prepush": "backtrack prepush",
+		"release": "backtrack release",
 		"test": "backtrack test",
 		"test.ci": "backtrack test.ci",
 		"test.ci-pretest": "backtrack test.ci-pretest",
-		"test.update": "jest --updateSnapshot",
-		"test.watch": "jest --watch"
-	},
-	"babel": {
-		"presets": [
-			"@backtrack/preset-node-module/babel-no-flow"
-		]
+		"test.update": "jest --update-snapshot",
+		"test.watch": "jest --watch --pass-with-no-tests"
 	},
 	"devDependencies": {
-		"@backtrack/core": "^0.1.20",
-		"@backtrack/preset-node-module": "^0.3.5"
+		"@backtrack/core": "^0.2.1",
+		"@backtrack/preset-node": "^0.10.2"
 	},
 	"dependencies": {
 		"lodash.isplainobject": "^4.0.6"

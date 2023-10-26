@@ -25,7 +25,7 @@ Jest Snapshot Serializer for [backtrack](https://github.com/chrisblossom/backtra
 'use strict';
 
 module.exports = {
-    snapshotSerializers: ['@backtrack/jest-serializer-preset'],
+	snapshotSerializers: ['@backtrack/jest-serializer-preset'],
 };
 ```
 

@@ -1,11 +1,16 @@
 'use strict';
 
 module.exports = {
-    presets: [['@backtrack/node-module', { flow: false }]],
+	presets: [
+		[
+			'@backtrack/node',
+			{ mode: 'module', syntax: 'node' },
+		],
+	],
 
-    config: {
-        jest: {
-            snapshotSerializers: ['./src/jest-serializer-preset.js'],
-        },
-    },
+	config: {
+		jest: {
+			snapshotSerializers: ['./lib/jest-serializer-preset.js'],
+		},
+	},
 };

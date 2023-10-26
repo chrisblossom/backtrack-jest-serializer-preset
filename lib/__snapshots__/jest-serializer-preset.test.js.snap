@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`serializer removes hash from files dest object 1`] = `
+{
+  "files": {
+    "dest": {
+      "absolute": {
+        ".babelrc.js": "<PROJECT_ROOT>/.babelrc.js",
+        "package.json": "<PROJECT_ROOT>/package.json",
+      },
+      "allowChanges": {
+        ".babelrc.js": false,
+        "package.json": false,
+      },
+      "files": [
+        "package.json",
+        ".babelrc.js",
+      ],
+      "ignoreUpdates": {
+        ".babelrc.js": false,
+        "package.json": false,
+      },
+    },
+    "makeDirs": [
+      "dist",
+      "src",
+    ],
+    "src": {
+      "absolute": {
+        "lib/__sandbox__/file1.js": "<PROJECT_ROOT>/lib/__sandbox__/file1.js",
+        "lib/__sandbox__/file2.js": "<PROJECT_ROOT>/lib/__sandbox__/file2.js",
+      },
+      "files": [
+        "lib/__sandbox__/file1.js",
+        "lib/__sandbox__/file2.js",
+      ],
+      "hash": {
+        "lib/__sandbox__/file1.js": "49598ea59816da0629609bb00775082fb21490af94fbcc8fbbbb120a6f5dc135",
+        "lib/__sandbox__/file2.js": "6cfc52d273559d0815ab3c56e1a1ad59b540948ddff9162991599c068d55e46a",
+      },
+    },
+  },
+  "packageJson": [
+    {
+      "outside": true,
+    },
+  ],
+}
+`;

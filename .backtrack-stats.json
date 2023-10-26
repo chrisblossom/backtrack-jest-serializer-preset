@@ -2,57 +2,55 @@
     "fileManager": {
         "directories": [
             ".circleci",
-            "dist",
-            "src"
+            ".husky",
+            "lib"
         ],
         "files": {
-            ".circleci/config.yml": "f8afa0de22d1ce5ee659b86993cf898e85b383599dab0f06ef052d1f4510ef37",
-            ".editorconfig": "65c8c6dd2b55cd63f7a55d2ed77bb1344a345ed651c5b0a1cb689fa95753e63d",
-            ".eslintignore": "7b358a16955be6b9b56add38102fccd293af540701ac91cd5020bfe37fe3fbb3",
-            ".eslintrc.js": "0de8c62f28870b2afeb3eb58a5a9a106a96c9181aa9478f71760bb155bb4a205",
-            ".gitignore": "715c4f869d50d4e11254a97441df027e6cabd50612d10e844e5efba4078f484f",
-            ".lintstagedrc.js": "c8dd8df94d9c8de4503bc1ab4b4ea12c7450d76ebbd50c9b4c3c7975609e28da",
-            ".npmrc": "f92bfc9e4d622a5c53c3fcd1b61206420f8dc666db99e57560c33ad2fdc80a47",
-            ".prettierignore": "7b358a16955be6b9b56add38102fccd293af540701ac91cd5020bfe37fe3fbb3",
-            ".prettierrc.js": "d30f794e5447d44ad2ed8a1123bc15fdaf6775ad7776f3c1411e3b965f3d3a20",
-            ".yarnrc": "e4bdd4d0bcb6dd15e5585dc6fa2c90780abaf4904305afb12d9af02000e070f3",
-            "CHANGELOG.md": "ignoreUpdates",
+            ".circleci/config.yml": "8c0cfd70d0df0bcc72810dda6b2e99a5fffa2545ac9a9827e0f5fbcd9e2feae5",
+            ".editorconfig": "c8e06355ec368086c1313bda19033a9e5d8a920d27dbf91a97fc509a0d2d8e3b",
+            ".eslintignore": "cc67305578620b791ded1c8aed0f3c39db17c4643c760d09408e18eadb1d7a37",
+            ".eslintrc.cjs": "00aed0fb026ab32804ce28d202a5e8ff43d5ef238ab938774c34b19fd6c1047b",
+            ".gitattributes": "f511b169e2a0b7529ac2887dffad3b04a16b954209edf18fec7f8911a81ad17d",
+            ".gitignore": "8791c419e79de53e5c2eefa59ab16b52b5413bd08da46be94e9e6cc3153a17a0",
+            ".husky/pre-commit": "e4add719772b9da7940f03a22d607f8c8c86a543b9260739f9a8143b89007597",
+            ".husky/pre-push": "bd2849b7a84e41755e4c74b1a3d0640914f2cf1a1a4373640aa8d6308a3c53ee",
+            ".lintstagedrc.cjs": "bc49af6b82be36d6b1ef246bd20ce41a5726b59701584ad6fc57ce28c8ea6785",
+            ".np-config.cjs": "f1e82191dea83526e85a98a48c5b974b59e6e99293e864d0a1d02d5999e6a675",
+            ".npmrc": "f535d8452d57a9d969bc54c2eaa831f3e20ccb5c3dbeeabc6f613d27a4b5a28a",
+            ".prettierignore": "cc67305578620b791ded1c8aed0f3c39db17c4643c760d09408e18eadb1d7a37",
+            ".prettierrc.cjs": "105ba088ab96fe3b965231970dc8db9904de34ff9a9febff5a071d8220b74701",
+            ".yarnrc": "feed5a1b1413c2d27507ed09e7d1c21fb40e0f8aca947c0620793b7e187e8ba4",
             "README.md": "ignoreUpdates",
-            "appveyor.yml": "251406424b8cb49b1a8858ef7eb521ae57856964625daed85b591692e8f98e15",
-            "jest.config.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
-            "src/jest-serializer-preset.js": "ignoreUpdates",
-            "wallaby.config.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e"
+            "appveyor.yml": "6aa9016d30e25bc337b46ce7a9e7dd84272410415dfa539a0dda7070c1f41259",
+            "jest.config.cjs": "849190b5138d25fa0849678fb4a3c818fb0dccffbe6a86732713a18c4cc06b6d",
+            "lib/jest-serializer-preset.js": "ignoreUpdates",
+            "wallaby.config.cjs": "1685bb89c5e60c303b9a319b3ee52766bfc0c0b7cf5a2c0e5f8e67a0e8febeba"
         }
     },
     "packageJson": {
-        "babel": {
-            "presets": [
-                "@backtrack/preset-node-module/babel-no-flow"
-            ]
-        },
         "engines": {
-            "node": ">=6.9.0",
-            "npm": ">=3.10.10"
+            "node": ">=18.12.0"
         },
         "files": [
-            "dist/"
+            "lib/"
         ],
-        "main": "dist/jest-serializer-preset.js",
+        "main": "lib/jest-serializer-preset.js",
+        "module": "commonjs",
+        "private": false,
         "scripts": {
-            "build": "backtrack build --production",
-            "clean": "backtrack clean",
-            "dev": "backtrack dev --development",
+            "check.all": "backtrack check.all",
             "format": "backtrack format",
+            "git-pre-commit": "backtrack git-pre-commit",
+            "git-pre-push": "backtrack git-pre-push",
             "lint": "backtrack lint",
             "lint.fix": "backtrack lint.fix",
-            "precommit": "backtrack precommit",
             "prepublishOnly": "backtrack prepublishOnly",
-            "prepush": "backtrack prepush",
+            "release": "backtrack release",
             "test": "backtrack test",
             "test.ci": "backtrack test.ci",
             "test.ci-pretest": "backtrack test.ci-pretest",
-            "test.update": "jest --updateSnapshot",
-            "test.watch": "jest --watch"
+            "test.update": "jest --update-snapshot",
+            "test.watch": "jest --watch --pass-with-no-tests"
         }
     }
 }
