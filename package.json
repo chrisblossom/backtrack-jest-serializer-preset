@@ -1,52 +1,52 @@
 {
-  "name": "@backtrack/jest-serializer-preset",
-  "version": "0.1.4",
-  "description": "jest snapshot serializer for backtrack presets",
-  "keywords": [
-    "backtrack",
-    "jest",
-    "snapshot",
-    "serializer",
-    "preset"
-  ],
-  "license": "MIT",
-  "repository": "chrisblossom/backtrack-jest-serializer-preset",
-  "homepage": "https://github.com/chrisblossom/backtrack-jest-serializer-preset",
-  "author": "Chris Blossom",
-  "engines": {
-    "node": ">=6.9.0",
-    "npm": ">=3.10.10"
-  },
-  "files": [
-    "dist/"
-  ],
-  "main": "dist/jest-serializer-preset.js",
-  "scripts": {
-    "build": "backtrack build --production",
-    "clean": "backtrack clean",
-    "dev": "backtrack dev --development",
-    "format": "backtrack format",
-    "lint": "backtrack lint",
-    "lint.fix": "backtrack lint.fix",
-    "precommit": "backtrack precommit",
-    "prepublishOnly": "backtrack prepublishOnly",
-    "prepush": "backtrack prepush",
-    "test": "backtrack test",
-    "test.ci": "backtrack test.ci",
-    "test.ci-pretest": "backtrack test.ci-pretest",
-    "test.update": "jest --updateSnapshot",
-    "test.watch": "jest --watch"
-  },
-  "babel": {
-    "presets": [
-      "@backtrack/preset-node-module/babel-no-flow"
-    ]
-  },
-  "devDependencies": {
-    "@backtrack/core": "^0.1.20",
-    "@backtrack/preset-node-module": "^0.3.5"
-  },
-  "dependencies": {
-    "lodash.isplainobject": "^4.0.6"
-  }
+	"name": "@backtrack/jest-serializer-preset",
+	"version": "0.1.4",
+	"description": "jest snapshot serializer for backtrack presets",
+	"keywords": [
+		"backtrack",
+		"jest",
+		"snapshot",
+		"serializer",
+		"preset"
+	],
+	"license": "MIT",
+	"repository": "chrisblossom/backtrack-jest-serializer-preset",
+	"homepage": "https://github.com/chrisblossom/backtrack-jest-serializer-preset",
+	"author": "Chris Blossom",
+	"engines": {
+		"node": ">=6.9.0",
+		"npm": ">=3.10.10"
+	},
+	"files": [
+		"dist/"
+	],
+	"main": "dist/jest-serializer-preset.js",
+	"scripts": {
+		"build": "backtrack build --production",
+		"clean": "backtrack clean",
+		"dev": "backtrack dev --development",
+		"format": "backtrack format",
+		"lint": "backtrack lint",
+		"lint.fix": "backtrack lint.fix",
+		"precommit": "backtrack precommit",
+		"prepublishOnly": "backtrack prepublishOnly",
+		"prepush": "backtrack prepush",
+		"test": "backtrack test",
+		"test.ci": "backtrack test.ci",
+		"test.ci-pretest": "backtrack test.ci-pretest",
+		"test.update": "jest --updateSnapshot",
+		"test.watch": "jest --watch"
+	},
+	"babel": {
+		"presets": [
+			"@backtrack/preset-node-module/babel-no-flow"
+		]
+	},
+	"devDependencies": {
+		"@backtrack/core": "^0.1.20",
+		"@backtrack/preset-node-module": "^0.3.5"
+	},
+	"dependencies": {
+		"lodash.isplainobject": "^4.0.6"
+	}
 }
